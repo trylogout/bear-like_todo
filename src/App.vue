@@ -2,15 +2,33 @@
   <div id="app">
     <br />
     <h1>Simple Bear-like ToDo list</h1>
-    <div id="nav">
+    <div id="nav" v-if="show">
       <router-link to="/">ToDo</router-link>|
       <router-link to="/about">About</router-link>|
-      <router-link to="/home">Home</router-link>
+      <router-link to="/home">AdminTest</router-link>|
+      <a id="logout-link" href="#" @click.prevent="logout">Logout</a>
     </div>
     <hr />
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    logout(){
+      localStorage.removeItem('jwt');
+      localStorage.removeItem('user');
+      this.$router.go('/login');
+    }
+  },
+  computed:{
+    show(){
+        return this.$route.name !== 'SignIn'
+      }
+    }
+  }
+</script>
 
 <style>
 body {

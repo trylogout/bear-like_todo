@@ -84,7 +84,7 @@ li {
   margin-bottom: 1rem;
   padding: 0.5rem 0.5rem;
   border: 1px solid #eee;
-  border-radius: 40px;
+  border-radius: 2px;
   box-shadow: 0 2px #eee;
   background-color: #fdfdfd;
   justify-content: space-between;
@@ -94,7 +94,7 @@ li {
   text-indent: -0.65em;
   text-align: left;
   display: inline-flex;
-  width: 60%;
+  width: 40%;
   height: auto;
   margin-right: 1em;
 }
@@ -127,7 +127,6 @@ li {
   height: 20px;
   background: #cb4e4e;
   color: #fff;
-  box-shadow: 0 2px #878787;
   border: none;
   cursor: pointer;
   display: inline-block;

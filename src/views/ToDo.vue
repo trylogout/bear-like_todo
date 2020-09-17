@@ -79,8 +79,7 @@
           </li>
         </ul>
       </nav>
-
-      <hr />
+      <br/>
       <ToDoList v-if="filteredToDos.length" v-bind:todos="filteredToDos" @removeTodo="removeTodo" />
       <div v-else>
         <div class="sadText">
@@ -290,6 +289,7 @@ export default {
   },
 };
 </script>
+
 <style lang="scss">
 @import "https://use.fontawesome.com/releases/v5.0.10/css/all.css";
 @import "https://fonts.googleapis.com/css?family=Lato:300";
